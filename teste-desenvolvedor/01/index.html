@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+    xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting"> <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
+    <!-- Tell iOS not to automatically link certain text strings. -->
+    <meta name="color-scheme" content="light">
+    <meta name="supported-color-schemes" content="light">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>A new resource for patients who may have autoimmune PAP</title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <!-- What it does: Makes background https://emkt.tugare.com.br/MYE-0001-24U in 72ppi Outlook render at correct size. -->
+    <!--[if gte mso 9]>
+	    <xml>
+	        <o:OfficeDocumentSettings>
+	            <o:PixelsPerInch>96</o:PixelsPerInch>
+	        </o:OfficeDocumentSettings>
+	    </xml>
+	    <![endif]-->
+
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 23 - 41 can be safely removed. -->
+
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+	        <style>
+	            * {
+	                font-family: sans-serif !important;
+	            }
+	        </style>
+	    <![endif]-->
+
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: https://web.archive.org/web/20190717120616/http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+    <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,600' rel='stylesheet' type='text/css'> -->
+    <!--<![endif]-->
+
+    <!-- Web Font / @font-face : END -->
+
+    <!-- CSS Reset : BEGIN -->
+    <style>
+        body {
+            width: 100%;
+        }
+
+        #table {
+            min-width: 320px;
+            max-width: 600px;
+        }
+
+        /* What it does: Tells the email client that both light and dark styles are provided. A duplicate of meta color-scheme meta tag above. */
+        :root {
+            color-scheme: light dark;
+            supported-color-schemes: light dark;
+        }
+
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* What it does: Centers email on Android 4.4 */
+        div[style*="margin: 20px 0"] {
+            margin: 0 !important;
+        }
+
+        /* What it does: forces Samsung Android mail clients to use the entire viewport */
+        #MessageViewBody,
+        #MessageWebViewDiv {
+            width: 100% !important;
+        }
+
+        sup {
+            font-size: 0.6em;
+        }
+
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        /* What it does: Fixes webkit padding issue. */
+        table {
+            border-spacing: 0 !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
+
+        /* What it does: Uses a better rendering method when resizing https://emkt.tugare.com.br/MYE-0001-24U in IE. */
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+        a {
+            text-decoration: none;
+        }
+
+        /* What it does: A work-around for email clients meddling in triggered links. */
+        a[x-apple-data-detectors],
+        /* iOS */
+        .unstyle-auto-detected-links a,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* What it does: Prevents Gmail from displaying a download button on large, non-linked https://emkt.tugare.com.br/MYE-0001-24U. */
+        .a6S {
+            display: none !important;
+            opacity: 0.01 !important;
+        }
+
+        /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+        .im {
+            color: inherit !important;
+        }
+
+        /* If the above doesn't work, add a .g-img class to any image in question. */
+        img.g-img+div {
+            display: none !important;
+        }
+
+        /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+        /* Create one of these media queries for each additional viewport size you'd like to fix */
+
+        /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+        @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+            u~div .email-container {
+                min-width: 320px !important;
+            }
+        }
+
+        /* iPhone 6, 6S, 7, 8, and X */
+        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+            u~div .email-container {
+                min-width: 375px !important;
+            }
+        }
+
+        /* iPhone 6+, 7+, and 8+ */
+        @media only screen and (min-device-width: 414px) {
+            u~div .email-container {
+                min-width: 414px !important;
+            }
+        }
+    </style>
+    <!-- CSS Reset : END -->
+
+    <!-- Progressive Enhancements : BEGIN -->
+    <style>
+        /* What it does: Hover styles for buttons */
+        .button-td,
+        .button-a {
+            transition: all 100ms ease-in;
+        }
+
+        .button-td-primary:hover,
+        .button-a-primary:hover {
+            background: #555555 !important;
+            border-color: #555555 !important;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 599px) {
+
+            .hidden-mobile {
+                display: none;
+            }
+
+            /* What it does: Adjust typography on small screens to improve readability */
+            table {
+                width: 100%;
+            }
+
+            .stack-column-center {
+                width: 100%;
+                display: block;
+
+            }
+
+            .special-width2 {
+                max-width: 221px;
+                margin: 20px auto 0;
+                display: block;
+            }
+
+            .stack-column-center p {
+                text-align: center;
+                width: 100% !important;
+            }
+
+            .stack-column-center img {
+                margin: auto;
+            }
+
+            .padding_especial {
+                padding: 10px 0px 10px 1px !important;
+            }
+
+            .mobile-size {
+                max-width: 100% !important;
+                padding-bottom: 20px !important;
+            }
+
+            .mobile-padding {
+                padding: 3px 28px 0 !important;
+                text-align: center !important;
+            }
+
+            .hidden-mobile {
+                display: none !important;
+            }
+        }
+    </style>
+
+
+    <!-- Progressive Enhancements : END -->
+
+</head>
+<!--
+	The email background color (#222222) is defined in three places:
+	1. body tag: for most email clients
+	2. center tag: for Gmail and Inbox mobile apps and web versions of Gmail, GSuite, Inbox, Yahoo, AOL, Libero, Comcast, freenet, Mail.ru, Orange.fr
+	3. mso conditional: For Windows 10 Mail
+-->
+
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #c2c2c2;">
+    <center role="article" aria-roledescription="email" lang="en" style="width: 100%; background-color: #c2c2c2;">
+        <!--[if mso | IE]>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #222222;">
+    <tr>
+    <td>
+    <![endif]-->
+
+        <!-- Visually Hidden Preheader Text : BEGIN -->
+        <div style="max-height:0; overflow:hidden; mso-hide:all;" aria-hidden="true">
+            This new website teaches patients about aPAP and its diagnosis
+        </div>
+        <!-- Visually Hidden Preheader Text : END -->
+
+        <!-- Create white space after the desired preview text so email clients don’t pull other distracting text into the inbox preview. Extend as necessary. -->
+        <!-- Preview Text Spacing Hack : BEGIN -->
+        <div
+            style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+            &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+        </div>
+        <!-- Preview Text Spacing Hack : END -->
+
+        <!--
+            Set the email width. Defined in two places:
+            1. max-width for all clients except Desktop Windows Outlook, allowing the email to squish on narrow but never go wider than 680px.
+            2. MSO tags for Desktop Windows Outlook enforce a 680px width.
+            Note: The Fluid and Responsive templates have a different width (600px). The hybrid grid is more "fragile", and I've found that 680px is a good width. Change with caution.
+        -->
+        <div style="max-width: 600px; margin: 0 auto;" class="email-container">
+            <!--[if mso]>
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="680">
+            <tr>
+            <td>
+            <![endif]-->
+
+            <!-- Email Body : BEGIN -->
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+
+                <tr>
+                    <td style="background-color: #ffffff; padding: 31px 20px 0; ">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 18px; color: #000000; text-align: center;">
+                                    <p style="margin: 0;"><a href="#"
+                                            style="color: #004BFF; text-decoration: underline;">View in browser</a> | <a
+                                            href="#" style="color: #004BFF; text-decoration: underline;">Forward to
+                                            a friend</a></p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #ffffff; padding-bottom: 21px;">
+                        <img src="images/header.png" width="600" height=""
+                            alt="e-M.D./alert - Providing important information to healthcare professionals since 1976"
+                            border="0"
+                            style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"
+                            class="g-img">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #003B4C; padding: 38px 20px 50px;" align="center">
+                        <img src="images/logo-apap.png" width="225px" height="" alt="Logo Apap ClearPath" border="0"
+                            style="width: 100%; max-width: 225px; height: auto; margin: auto; display: block;"
+                            class="g-img">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #003B4C; padding: 14px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="515"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 19px; color: #fff; text-align: left; font-weight: 400;">
+                                    <p style="margin: 0;"><span style="color: #FFC840; font-size: 20px;">Dear
+                                            doctor,</span><br>
+                                        <br>
+                                        Do you have patients with autoimmune pulmonary alveolar proteinosis (aPAP) or
+                                        patients exhibiting symptoms of aPAP who want to learn more about the
+                                        condition?<br>
+                                        <br>
+                                        <span style="color: #F15F5C; font-weight: bold;">We have launched a new website
+                                            just for
+                                            them.</span> Share the link with your patients
+                                        so they can learn more about the disease and find the
+                                        resources they need:
+                                        <a href="https://www.apapclearpath.com/patient/" target="_blank"
+                                            style="color: #fff; text-decoration: underline; font-weight: bold;">https://www.apapclearpath.com/patient/</a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #003B4C; padding: 17px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="515"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 29px; line-height: 31px; color: #00B39B; text-align: left; font-weight: 400;">
+                                    <p style="margin: 0; max-width: 490px;">You may have more aPAP patients than you
+                                        think<span style="font-size:75%; vertical-align:6px;">1-3</span>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #003B4C; padding: 14px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="515"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 19px; color: #fff; text-align: left; font-weight: 400;">
+                                    <p style="margin: 0;">
+                                        aPAP presents with symptoms common to other pulmonary illnesses, making it
+                                        difficult to diagnose.2,4 In the time it takes for someone to be accurately
+                                        diagnosed with aPAP, their quality of life may be negatively impacted.<span
+                                            style="font-size:75%; vertical-align:6px;">2,5,6</span><br>
+                                        <br>
+                                        <span style="color: #F15F5C; font-weight: bold;">A simple, accurate, no-cost,
+                                            and noninvasive blood test</span> can help you obtain a
+                                        definitive diagnosis sooner.<span
+                                            style="font-size:75%; vertical-align:6px;">2,7</span>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #003B4C; padding: 27px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="495"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 19px; color: #FFC840; text-align: left; font-weight: 400;">
+                                    <p style="margin: 0;">
+                                        When you see:
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #003B4C; padding: 38px 20px 0;" align="center">
+                        <img src="images/icon-01.png" width="84px" height=""
+                            alt="Icon representing common chronic lung symptoms" border="0"
+                            style="width: 100%; max-width: 84px; height: auto; margin: auto; display: block;"
+                            class="g-img">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #003B4C; padding: 8px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="191"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 19px; color: #fff; text-align: center; font-weight: 400;">
+                                    <p style="margin: 0;">
+                                        Common chronic pulmonary symptoms<span
+                                            style="font-size:75%; vertical-align:6px;">2,6,8</span>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #003B4C; padding: 6px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="191"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 27px; line-height: 29px; color: #fff; text-align: center; font-weight: bold;">
+                                    <p style="margin: 0;">
+                                        +
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #003B4C; padding: 6px 20px 0;" align="center">
+                        <img src="images/icon-02.png" width="109px" height=""
+                            alt="Icon representing common chronic lung symptoms" border="0"
+                            style="width: 100%; max-width: 109px; height: auto; margin: auto; display: block;"
+                            class="g-img">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #003B4C; padding: 6px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="205"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 19px; color: #fff; text-align: center; font-weight: 400;">
+                                    <p style="margin: 0;">
+                                        An abnormal computerized tomography scan<span
+                                            style="font-size:75%; vertical-align:6px;">2,6,8</span>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #003B4C; padding: 6px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="191"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 27px; line-height: 29px; color: #fff; text-align: center; font-weight: bold;">
+                                    <p style="margin: 0;">
+                                        +
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #003B4C; padding: 6px 20px 0;" align="center">
+                        <img src="images/icon-03.png" width="83px" height=""
+                            alt="Icon representing common chronic lung symptoms" border="0"
+                            style="width: 100%; max-width: 83px; height: auto; margin: auto; display: block;"
+                            class="g-img">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #003B4C; padding: 6px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="289"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 19px; color: #fff; text-align: center; font-weight: 400;">
+                                    <p style="margin: 0;">
+                                        Other pulmonary infection diagnoses that are refractory to treatment<span
+                                            style="font-size:75%; vertical-align:6px;">2,6,8</span>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #003B4C; padding: 29px 20px 51px;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="515"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 19px; color: #FFC840; text-align: left; font-weight: bold;">
+                                    <p style="margin: 0; max-width: 410px;">
+                                        Then, it is time to test for granulocyte-macrophage
+                                        colony-stimulating factor (GM-CSF) autoantibodies.<span
+                                            style="font-size:75%; vertical-align:6px;">2,9</span>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #ffffff; padding-bottom: 21px;">
+                        <img src="images/line-color.png" width="600" height="" alt="Colored line used as a separator"
+                            border="0"
+                            style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"
+                            class="g-img">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 41px 20px 34px;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="515"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 40px; line-height: 42px; color: #003B4C; text-align: left; font-weight: 400;">
+                                    <p style="margin: 0;">
+                                        The aPAP ClearPath<span style="font-size:75%; vertical-align:6px;">™</span><br>
+                                        Test Kit
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 14px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="515"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 19px; color: #003B4C; text-align: left; font-weight: 400;">
+                                    <p style="margin: 0; max-width: 495px;">
+                                        A simple, accurate, and <b>noninvasive serum-based blood test</b> is available
+                                        at no
+                                        cost to you or your patients.
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 12px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="515"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 19px; color: #003B4C; text-align: left; font-weight: 400;">
+                                    <p style="margin: 0; max-width: 495px;">
+                                        As the ordering physician, you will receive quantitative test results via email
+                                        or fax within 7 business days of the blood sample arriving at the lab.
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 12px 20px 0;" align="left">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="515" align="left">
+                            <tr>
+                                <td width="20" class="hidden-mobile">&nbsp;</td>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 19px; color: #003B4C; text-align: center; font-weight: bold; background-color: #00B39B; padding: 23px 0 21px;">
+                                    <a href="https://www.apapclearpath.com/hcp/#Requestthetest" target="_blank"
+                                        style="color: #003B4C; text-decoration: none;">
+                                        <p style="margin: 0;">
+                                            Request the aPAP ClearPath<span
+                                                style="font-size:75%; vertical-align:6px;">™</span> Test
+                                        </p>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 12px 20px 74px;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="515"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 16px; color: #003B4C; text-align: left; font-weight: 400;">
+                                    <p style="margin: 0; max-width: 503px;">
+                                        <b>References: 1.</b> Savara IMPALA-2 study (SAV006-05): IMPALA-2 Investigator
+                                        Meeting;
+                                        Savara Inc.; July 2021; Langhorne, PA. <b>2.</b> McCarthy C, Avetisyan R, Carey
+                                        BC,
+                                        Chalk C, Trapnell BC. Prevalence and healthcare burden of pulmonary alveolar
+                                        proteinosis. <em>Orphanet J Rare Dis</em>. 2018;13(1):129.
+                                        doi:10.1186/s13023-018-0846-y.
+                                        <b>3.</b> McCarthy C, Carey B, Trapnell BC. Blood testing for differential
+                                        diagnosis of
+                                        pulmonary alveolar proteinosis syndrome. <em>Chest</em>. 2019;155(2):450-452.
+                                        doi:10.1016/j.chest.2018.11.002. <b>4.</b> Koh WJ. Nontuberculous
+                                        mycobacteria-overview. <em>Microbiol Spectr</em>. 2017;5(1):1-7.
+                                        doi:10.1128/microbiolspec.TNMI7-0024-2016. <b>5.</b> Inoue Y, Trapnell BC,
+                                        Tazawa R, et
+                                        al; for the Japanese Center of the Rare Lung Diseases Consortium.
+                                        Characteristics of a large cohort of patients with autoimmune pulmonary alveolar
+                                        proteinosis in Japan. <em>Am J Respir Crit Care Med</em>. 2008;177(7):752-762.
+                                        doi:10.1164/rccm.200708-1271OC. <b>6.</b> aPAP patient journey & qualitative
+                                        segmentation; final report. Savara, Inc.; 2023; Langhorne, PA. <b>7.</b>
+                                        McCarthy C,
+                                        Kokosi M, Bonella F. Shaping the future of an ultra-rare disease: unmet needs in
+                                        the diagnosis and treatment of pulmonary alveolar proteinosis. <em>Curr Opin
+                                            Pulm
+                                            Med</em>. 2019;25(5):450-458. doi:10.1097/MCP.0000000000000601. <b>8.</b>
+                                        Miyashita K,
+                                        Hozumi H, Inoue Y, Suzuki T, Suda T. Nationwide survey of adult patients with
+                                        pulmonary alveolar proteinosis using the National Database of designated
+                                        intractable diseases of Japan. <em>Respir Investig</em>. 2023;61(3):364-370.
+                                        doi:10.1016/j.resinv.2023.02.011. <b>9.</b> Ataya A, Knight V, Carey BC, Lee E,
+                                        Tarling
+                                        EJ, Wang T. The role of GM-CSF autoantibodies in infection and autoimmune
+                                        pulmonary alveolar proteinosis: a concise review. <em>Front Immunol</em>.
+                                        2021;12:752856.
+                                        doi:10.3389/fimmu.2021.752856.
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #DBDCDE; padding:  31px 20px;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center"
+                            width="526">
+                            <tr>
+                                <!-- Column : BEGIN -->
+                                <th valign="midlle" width="169" class="stack-column-center">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                        align="center">
+                                        <tr>
+                                            <td width="169" valign="top">
+                                                <img src="images/logo-savara.png" width="169" height=""
+                                                    alt="Logo Savara" border="0"
+                                                    style="width: 169px; max-width: 169px; height: auto; margin: 0; display: block;"
+                                                    class="g-img">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </th>
+                                <th valign="midlle" width="41" class="stack-column-center"></th>
+                                <th valign="midlle" width="345" class="stack-column-center">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                        align="center">
+                                        <tr>
+                                            <td
+                                                style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #494E5A; text-align: center; font-weight: 400;">
+                                                © 2024 Savara Inc. All rights reserved. aPAP041 10/24
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </th>
+                                <!-- Column : END -->
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 30px 20px 29px;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="515"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 20px; color: #494E5A; text-align: center; font-weight: 400;">
+                                    <p style="margin: 0;">
+                                        e-M.D./alert was sent to you by /alert Marketing, Inc.<br>
+                                        395 Hudson Street, 3rd Floor<br>
+                                        New York, NY 10014<br>
+                                        <br>
+                                        Be sure to add <a href="mailto:emdalert@emsg.alertmarketingemail.com"
+                                            style="color: #004BFF">emdalert@emsg.alertmarketingemail.com</a> to your
+                                        address book.<br>
+                                        <br>
+                                        <a href="#" style="color: #004BFF; text-decoration: underline;">Click here</a>
+                                        if you do not wish to receive further e-mails from e-M.D./alert.
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!-- Email Body : END -->
+            <!--[if mso]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </div>
+        <!--[if mso | IE]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+    </center>
+</body>
+
+</html>

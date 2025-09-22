@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+    xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting"> <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
+    <!-- Tell iOS not to automatically link certain text strings. -->
+    <meta name="color-scheme" content="light">
+    <meta name="supported-color-schemes" content="light">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Understanding bile acid buildup in Alagille syndrome</title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <!-- What it does: Makes background in 72ppi Outlook render at correct size. -->
+    <!--[if gte mso 9]>
+	    <xml>
+	        <o:OfficeDocumentSettings>
+	            <o:PixelsPerInch>96</o:PixelsPerInch>
+	        </o:OfficeDocumentSettings>
+	    </xml>
+	    <![endif]-->
+
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 23 - 41 can be safely removed. -->
+
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+	        <style>
+	            * {
+	                font-family: sans-serif !important;
+	            }
+	        </style>
+	    <![endif]-->
+
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: https://web.archive.org/web/20190717120616/http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+    <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,600' rel='stylesheet' type='text/css'> -->
+    <!--<![endif]-->
+
+    <!-- Web Font / @font-face : END -->
+
+    <!-- CSS Reset : BEGIN -->
+    <style>
+        body {
+            width: 100%;
+        }
+
+        #table {
+            min-width: 320px;
+            max-width: 600px;
+        }
+
+        /* What it does: Tells the email client that both light and dark styles are provided. A duplicate of meta color-scheme meta tag above. */
+        :root {
+            color-scheme: light dark;
+            supported-color-schemes: light dark;
+        }
+
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* What it does: Centers email on Android 4.4 */
+        div[style*="margin: 20px 0"] {
+            margin: 0 !important;
+        }
+
+        /* What it does: forces Samsung Android mail clients to use the entire viewport */
+        #MessageViewBody,
+        #MessageWebViewDiv {
+            width: 100% !important;
+        }
+
+        sup {
+            font-size: 0.6em;
+        }
+
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        /* What it does: Fixes webkit padding issue. */
+        table {
+            border-spacing: 0 !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
+
+        /* What it does: Uses a better rendering method when resizing in IE. */
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+        a {
+            text-decoration: none;
+        }
+
+        /* What it does: A work-around for email clients meddling in triggered links. */
+        a[x-apple-data-detectors],
+        /* iOS */
+        .unstyle-auto-detected-links a,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* What it does: Prevents Gmail from displaying a download button on large, non-linked. */
+        .a6S {
+            display: none !important;
+            opacity: 0.01 !important;
+        }
+
+        /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+        .im {
+            color: inherit !important;
+        }
+
+        /* If the above doesn't work, add a .g-img class to any image in question. */
+        img.g-img+div {
+            display: none !important;
+        }
+
+        /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+        /* Create one of these media queries for each additional viewport size you'd like to fix */
+
+        /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+        @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+            u~div .email-container {
+                min-width: 320px !important;
+            }
+        }
+
+        /* iPhone 6, 6S, 7, 8, and X */
+        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+            u~div .email-container {
+                min-width: 375px !important;
+            }
+        }
+
+        /* iPhone 6+, 7+, and 8+ */
+        @media only screen and (min-device-width: 414px) {
+            u~div .email-container {
+                min-width: 414px !important;
+            }
+        }
+    </style>
+    <!-- CSS Reset : END -->
+
+    <!-- Progressive Enhancements : BEGIN -->
+    <style>
+        /* What it does: Hover styles for buttons */
+        .button-td,
+        .button-a {
+            transition: all 100ms ease-in;
+        }
+
+        .button-td-primary:hover,
+        .button-a-primary:hover {
+            background: #555555 !important;
+            border-color: #555555 !important;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 599px) {
+
+            .hidden-mobile {
+                display: none;
+            }
+
+            /* What it does: Adjust typography on small screens to improve readability */
+            table {
+                width: 100%;
+            }
+
+            .stack-column-center {
+                width: 100%;
+                display: block;
+
+            }
+
+            .special-width2 {
+                max-width: 221px;
+                margin: 20px auto 0;
+                display: block;
+            }
+
+            .stack-column-center p {
+                text-align: center;
+                width: 100% !important;
+            }
+
+            .stack-column-center img {
+                margin: auto;
+            }
+
+            .padding_especial {
+                padding: 10px 0px 10px 1px !important;
+            }
+
+            .mobile-size {
+                max-width: 100% !important;
+                padding-bottom: 20px !important;
+            }
+
+            .mobile-padding {
+                padding: 3px 28px 0 !important;
+                text-align: center !important;
+            }
+
+            .hidden-mobile {
+                display: none !important;
+            }
+        }
+    </style>
+
+
+    <!-- Progressive Enhancements : END -->
+
+</head>
+<!--
+	The email background color (#222222) is defined in three places:
+	1. body tag: for most email clients
+	2. center tag: for Gmail and Inbox mobile apps and web versions of Gmail, GSuite, Inbox, Yahoo, AOL, Libero, Comcast, freenet, Mail.ru, Orange.fr
+	3. mso conditional: For Windows 10 Mail
+-->
+
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #c2c2c2;">
+    <center role="article" aria-roledescription="email" lang="en" style="width: 100%; background-color: #c2c2c2;">
+        <!--[if mso | IE]>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #222222;">
+    <tr>
+    <td>
+    <![endif]-->
+
+        <!-- Visually Hidden Preheader Text : BEGIN -->
+        <div style="max-height:0; overflow:hidden; mso-hide:all;" aria-hidden="true">
+            Learn how Alagille syndrome affects the liver. Please see Patient Information inside.
+        </div>
+        <!-- Visually Hidden Preheader Text : END -->
+
+        <!-- Create white space after the desired preview text so email clients don’t pull other distracting text into the inbox preview. Extend as necessary. -->
+        <!-- Preview Text Spacing Hack : BEGIN -->
+        <div
+            style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+            &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+        </div>
+        <!-- Preview Text Spacing Hack : END -->
+
+        <!--
+            Set the email width. Defined in two places:
+            1. max-width for all clients except Desktop Windows Outlook, allowing the email to squish on narrow but never go wider than 680px.
+            2. MSO tags for Desktop Windows Outlook enforce a 680px width.
+            Note: The Fluid and Responsive templates have a different width (600px). The hybrid grid is more "fragile", and I've found that 680px is a good width. Change with caution.
+        -->
+        <div style="max-width: 600px; margin: 0 auto;" class="email-container">
+            <!--[if mso]>
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="680">
+            <tr>
+            <td>
+            <![endif]-->
+
+            <!-- Email Body : BEGIN -->
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+
+                <tr>
+                    <td style="background-color: #17324D; padding: 8px 20px 0; ">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 16px; color: #fff; text-align: right;">
+                                    <a href="#" style="color: #fff; text-decoration: underline;">Browser version</a>
+                                </td>
+                                <td width="4">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #17324D; padding: 6px 20px 8px; ">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 16px; color: #fff; text-align: right;">
+                                    <a href="#" style="color: #fff; text-decoration: underline;">Important Safety
+                                        Information</a> | <a href="#"
+                                        style="color: #fff; text-decoration: underline;">Prescribing Information</a>
+                                </td>
+                                <td width="4">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #ffffff;">
+                        <img src="images/banner.png" width="600" height=""
+                            alt="Banner with the Livmarli logo and the text 'Livmarli (maralixibat) oral solution or tablets', on a blue background with clouds and wavy green shapes."
+                            border="0"
+                            style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"
+                            class="g-img">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 14px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #193D6C; text-align: left; font-weight: 400;">
+                                    Hello Doctor,
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 19px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    Thanks for signing up to receive emails about Alagille syndrome!
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 19px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    We know navigating information about your condition can feel overwhelming. That's
+                                    why we're here to provide you with clear, helpful information to guide you every
+                                    step of the way. In this email, we'll be exploring the liver's role in Alagille
+                                    syndrome.
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 24px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 20px; line-height: 140%; color: #003A70; text-align: left; font-weight: bold;">
+                                    How does Alagille syndrome affect the liver?
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 16px 20px 0;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center"
+                            width="552">
+                            <tr>
+                                <th valign="midlle" width="84" class="stack-column-center">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                        align="center">
+                                        <tr>
+                                            <td align="center">
+                                                <img src="images/icon-01.png" width="84"
+                                                    alt="Blue icon of liver with bile ducts" border="0"
+                                                    style="width: 84px; max-width: 84px; height: auto; display: block; margin: 0 auto; padding-bottom: 10px;">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </th>
+                                <th valign="midlle" width="20" class="stack-column-center">
+                                <th valign="midlle" width="448" class="stack-column-center">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                        align="center">
+                                        <tr>
+                                            <td
+                                                style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 16px; color: #1C1C1E; text-align: left; line-height: 150%; font-weight: 400;">
+                                                People with Alagille syndrome have too few bile ducts, which <b>prevents
+                                                    bile from ﬂowing out of the liver</b>.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </th>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 6px 20px 0;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center"
+                            width="552">
+                            <tr>
+                                <th valign="midlle" width="84" class="stack-column-center">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                        align="center">
+                                        <tr>
+                                            <td align="center">
+                                                <img src="images/icon-02.png" width="84"
+                                                    alt="Blue icon representing bile and circulation" border="0"
+                                                    style="width: 84px; max-width: 84px; height: auto; display: block; margin: 0 auto; padding-bottom: 10px;">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </th>
+                                <th valign="midlle" width="20" class="stack-column-center">
+                                <th valign="midlle" width="448" class="stack-column-center">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                        align="center">
+                                        <tr>
+                                            <td
+                                                style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 16px; color: #1C1C1E; text-align: left; line-height: 150%; font-weight: 400;">
+                                                When bile is not ﬂowing out of the liver, <b>bile acids—a part of
+                                                    bile—build up in the liver and the blood</b>.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </th>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 6px 20px 0;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center"
+                            width="552">
+                            <tr>
+                                <th valign="midlle" width="84" class="stack-column-center">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                        align="center">
+                                        <tr>
+                                            <td align="center">
+                                                <img src="images/icon-03.png" width="84"
+                                                    alt="Blue icon of human intestine" border="0"
+                                                    style="width: 84px; max-width: 84px; height: auto; display: block; margin: 0 auto; padding-bottom: 10px;">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </th>
+                                <th valign="midlle" width="20" class="stack-column-center">
+                                <th valign="midlle" width="448" class="stack-column-center">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                        align="center">
+                                        <tr>
+                                            <td
+                                                style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 16px; color: #1C1C1E; text-align: left; line-height: 150%; font-weight: 400;">
+                                                ~95% of bile acids made by the liver are <b>reabsorbed in the intestine
+                                                    and
+                                                    sent back to the liver</b> through something called the ileal bile
+                                                acid
+                                                transporter (IBAT).
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </th>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 14px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: center; font-weight: bold;">
+                                    Bile acid buildup may cause immediate problems (cholestatic pruritus) and have
+                                    long-term impacts (liver problems).
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 24px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 20px; line-height: 150%; color: #193D6C; text-align: center; font-weight: bold; background-color: #D2EBE7; padding: 30px 0 20px;">
+                                    Get to know bile basics
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 0 20px;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td style="background-color: #D2EBE7; padding: 0 0 15px;">
+
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 0 20px 24px;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 19px; color: #fff; text-align: center; font-weight: bold; background-color: #D2EBE7; padding: 0 0 30px;">
+                                    <a href="https://www.apapclearpath.com/hcp/#Requestthetest" target="_blank"
+                                        style="color: #fff; text-decoration: none; background-color: #193D6C; padding: 16px 26px;">
+                                        See the effects of bile acid buildup
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 0 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #193D6C; text-align: center; font-weight: bold;">
+                                    Please see Indication, Limitations of Use, and Important Safety Information below.
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 24px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    Keep an eye out on your inbox for important information about cholestatic pruritus
+                                    and its effects on people of all ages—or visit <a href="https://livmarli.com/"
+                                        target="_blank"
+                                        style="color: #0055B8; text-decoration: underline;">LIVMARLI.com</a> for more
+                                    info! </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 30px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #193D6C; text-align: left; font-weight: bold;">
+                                    INDICATION
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 8px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    LIVMARLI (maralixibat) oral solution and tablets are a prescription medicine used to
+                                    treat cholestatic pruritus (itch) in patients who are 3 months of age and older with
+                                    Alagille syndrome.
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 17px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    It is not known if LIVMARLI is safe and effective in children with Alagille syndrome
+                                    who are under 3 months of age. It is not known if LIVMARLI is safe and effective in
+                                    adults who are 65 years of age and older.
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 14px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #193D6C; text-align: left; font-weight: bold;">
+                                    IMPORTANT SAFETY INFORMATION
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 8px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #193D6C; text-align: left; font-weight: bold;">
+                                    What are the possible side effects of LIVMARLI (maralixibat) oral solution and
+                                    tablets?
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 8px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    LIVMARLI can cause serious side effects, including:
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 8px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td valign="top" width="15"
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    •</td>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    <b>Liver injury.</b> Changes in certain liver tests are common in patients but may
+                                    worsen
+                                    during treatment with LIVMARLI. These changes may be a sign of liver injury and can
+                                    be serious. Your health care provider should do blood tests and physical exams
+                                    before starting and during treatment to check your liver function. Tell your health
+                                    care provider right away if you get any signs or symptoms of liver problems,
+                                    including:
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 8px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td valign="top" width="25">&nbsp;</td>
+                                <td valign="top" width="15"
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    -</td>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    nausea or vomiting
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 2px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td valign="top" width="25">&nbsp;</td>
+                                <td valign="top" width="15"
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    -</td>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    your skin or the white part of your eye turns yellow
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 2px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td valign="top" width="25">&nbsp;</td>
+                                <td valign="top" width="15"
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    -</td>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    dark or brown urine
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 2px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td valign="top" width="25">&nbsp;</td>
+                                <td valign="top" width="15"
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    -</td>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    pain on the right side of your stomach (abdomen)
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 2px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td valign="top" width="25">&nbsp;</td>
+                                <td valign="top" width="15"
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    -</td>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    fullness, bloating, or fluid in your stomach area (ascites)
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 2px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td valign="top" width="25">&nbsp;</td>
+                                <td valign="top" width="15"
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    -</td>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    loss of appetite
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 2px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td valign="top" width="25">&nbsp;</td>
+                                <td valign="top" width="15"
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    -</td>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    bleeding or bruising more easily than normal, including vomiting blood
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 12px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td valign="top" width="15"
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    •</td>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    <b>Stomach and intestinal (gastrointestinal) problems.</b> LIVMARLI
+                                    can cause stomach and intestinal problems, including diarrhea and stomach pain
+                                    during treatment. Diarrhea can also cause the loss of too much body fluid (severe
+                                    dehydration). Your health care provider may advise you to monitor for new or
+                                    worsening stomach problems, including stomach pain, diarrhea, blood in your stool,
+                                    or vomiting. Tell your health care provider right away if you have any new or
+                                    worsening signs or symptoms of stomach and intestinal problems, including:
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 2px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td valign="top" width="25">&nbsp;</td>
+                                <td valign="top" width="15"
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    -</td>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    diarrhea
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 2px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td valign="top" width="25">&nbsp;</td>
+                                <td valign="top" width="15"
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    -</td>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    more frequent bowel movements than usual
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 2px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td valign="top" width="25">&nbsp;</td>
+                                <td valign="top" width="15"
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    -</td>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    stools that are black, tarry, or sticky, or have blood or mucous
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 2px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td valign="top" width="25">&nbsp;</td>
+                                <td valign="top" width="15"
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    -</td>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    severe stomach-area pain or tenderness
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 2px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td valign="top" width="25">&nbsp;</td>
+                                <td valign="top" width="15"
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    -</td>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    vomiting
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 2px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td valign="top" width="25">&nbsp;</td>
+                                <td valign="top" width="15"
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    -</td>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    urinating less often than usual
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 2px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td valign="top" width="25">&nbsp;</td>
+                                <td valign="top" width="15"
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    -</td>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    dizziness
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 2px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td valign="top" width="25">&nbsp;</td>
+                                <td valign="top" width="15"
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    -</td>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    headache
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 12px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td valign="top" width="15"
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    •</td>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    A condition called <b>Fat-Soluble Vitamin (FSV) Deficiency caused by low levels of
+                                        certain vitamins (vitamin A, D, E, and K) stored in body fat</b>. FSV deficiency
+                                    is
+                                    common in patients with Alagille syndrome but may worsen during treatment. Your
+                                    health care provider should do blood tests before starting and during treatment, and
+                                    may monitor for bone fractures and bleeding, which are common side effects.
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 12px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    Tell your health care provider about all medicines that you take, as LIVMARLI may
+                                    interact with other medicines. If you take a medicine that lowers cholesterol by
+                                    binding bile acids, such as cholestyramine, colesevelam, or colestipol, take
+                                    LIVMARLI at least 4 hours before or 4 hours after you take that medicine.
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 16px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    Your health care provider may change your dose, or temporarily or permanently stop
+                                    treatment if you have certain side effects.
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 16px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    LIVMARLI is available in oral solution and tablet formulations. LIVMARLI is taken by
+                                    mouth, 1 time each day, 30 minutes before a meal in the morning. For the oral
+                                    solution, be sure to use the provided oral dosing dispenser to accurately measure
+                                    the dose of medicine.
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 16px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: 400;">
+                                    These are not all of the possible side effects of LIVMARLI. For more information,
+                                    ask your health care provider or pharmacist. Call your doctor for medical advice
+                                    about side effects. You may report side effects to the FDA at 1-800-FDA-1088.
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #fff; padding: 12px 20px 30px;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 150%; color: #1C1C1E; text-align: left; font-weight: bold;">
+                                    Please see full <a
+                                        href="https://files.mirumpharma.com/livmarli/livmarli-prescribinginformation.pdf"
+                                        target="_blank" style="color: #193D6C; text-decoration: underline;">Prescribing
+                                        Information</a>, including
+                                    <a href="https://files.mirumpharma.com/livmarli/livmarli-patientinformation.pdf"
+                                        target="_blank" style="color: #193D6C; text-decoration: underline;">Patient
+                                        Information and Instructions for Use</a>, for LIVMARLI.
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #17324D; padding: 22px 20px 0;" align="left">
+                        <img src="images/logo-mirum.png" width="103px" height="" alt="Logo Mirum" border="0"
+                            style="width: 103px; max-width: 103px; height: auto; margin: 0; display: block;"
+                            class="g-img">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #17324D; padding: 21px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 16px; color: #fff; text-align: left; font-weight: 400;">
+                                    © 2025 - Mirum Pharmaceuticals, Inc.
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #17324D; padding: 9px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 16px; color: #fff; text-align: left; font-weight: 400;">
+                                    All rights reserved. US-LIV-2500112 07/2025
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #17324D; padding: 21px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 16px; color: #fff; text-align: left; font-weight: 400;">
+                                    989 E Hillsdale Blvd., Suite 300
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #17324D; padding: 9px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 16px; color: #fff; text-align: left; font-weight: 400;">
+                                    Foster City, CA 94404
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #17324D; padding: 21px 20px 0;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 16px; color: #fff; text-align: left; font-weight: 400;">
+                                    Please do not reply to this email. If you have questions, we're here to help. You
+                                    can reach us at: <a href="mailto:emdalert@emsg.alertmarketingemail.com"
+                                        style="color: #fff; text-decoration: underline;">info@mirumpharma.com</a>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #17324D; padding: 21px 20px 22px;" align="center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="552"
+                            align="center">
+                            <tr>
+                                <td
+                                    style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 16px; color: #fff; text-align: left; font-weight: 400;">
+                                    No longer want to receive updates? <a href="#"
+                                        style="color: #fff; text-decoration: underline;">Unsubscribe</a> | <a
+                                        href="https://mirumpharma.com/privacy-policy/"
+                                        style="color: #fff; text-decoration: underline;">Privacy Policy</a>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+            </table>
+            <!-- Email Body : END -->
+            <!--[if mso]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </div>
+        <!--[if mso | IE]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+    </center>
+</body>
+
+</html>
