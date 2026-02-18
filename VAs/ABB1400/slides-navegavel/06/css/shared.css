@@ -1,0 +1,88 @@
+html,
+body,
+.main {
+    width: 2360px;
+    height: 1640px;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.btn {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    z-index: 200;
+}
+
+.btn-prev {
+    width: 100px;
+    height: 800px;
+    left: 0;
+    bottom: 400px;
+}
+
+.btn-next {
+    width: 100px;
+    height: 800px;
+    right: 0;
+    bottom: 400px;
+}
+
+.btn-bula {
+    width: 120px;
+    height: 120px;
+    top: 0;
+    right: 105px;
+}
+
+.btn-home {
+    width: 92px;
+    height: 83px;
+    right: 283px;
+    top: 18px;
+}
+
+.btn-menu-1{
+    width: 200px;
+    height: 200px;
+    left: 89px;
+    bottom: 136px;
+
+}
+
+.btn-menu-2{
+    width: 200px;
+    height: 200px;
+    left: 623px;
+    bottom: 136px;
+
+}
+
+.btn-menu-3{
+    width: 200px;
+    height: 200px;
+    left: 1165px;
+    bottom: 136px;
+
+}
+
+.btn-menu-4{
+    width: 200px;
+    height: 200px;
+    left: 1690px;
+    bottom: 136px;
+
+}

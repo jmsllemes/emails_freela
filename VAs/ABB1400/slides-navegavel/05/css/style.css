@@ -1,0 +1,45 @@
+/* Container principal (Veeva padrão) */
+.main {
+    width: 2360px;
+    height: 1640px;
+    position: relative;
+    overflow: hidden;
+}
+
+#screen {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg.png);
+    background-size: contain;
+}
+
+.btn-open-popup {
+    width: 117px;
+    height: 117px;
+    right: 88px;
+    top: 471px;
+    z-index: 200;
+}
+
+.popup-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2360px;
+    height: 1640px;
+    background-image: url(../images/modal-01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2000;
+}
+
+.btn-close-popup {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    right: 180px;
+    top: 130px;
+    z-index: 400;
+    display: block;
+}

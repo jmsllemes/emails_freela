@@ -1,0 +1,338 @@
+/* Container principal (Veeva padrão) */
+.main {
+    width: 2360px;
+    height: 1640px;
+    position: relative;
+    overflow: hidden;
+}
+
+#screen {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg.png);
+    background-size: contain;
+}
+
+.popup-container-ref {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2360px;
+    height: 1640px;
+    background-image: url(../images/modal-01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2000;
+}
+
+.btn-open-popup-ref {
+    width: 83px;
+    height: 120px;
+    right: 172px;
+    top: 0;
+}
+
+.btn-close-popup-ref {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    right: 165px;
+    top: 148px;
+    z-index: 400;
+    display: block;
+}
+
+.popup-container-01 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2360px;
+    height: 1640px;
+    background-image: url(../images/modal-02.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2000;
+}
+
+.btn-open-popup-01 {
+    width: 117px;
+    height: 117px;
+    left: 528px;
+    top: 574px;
+}
+
+.btn-close-popup-01 {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    right: 165px;
+    top: 148px;
+    z-index: 400;
+    display: block;
+}
+
+.popup-container-03 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2360px;
+    height: 1640px;
+    background-image: url(../images/modal-03.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2000;
+}
+
+.btn-open-popup-03 {
+    width: 117px;
+    height: 117px;
+    left: 528px;
+    bottom: 464px;
+}
+
+.btn-close-popup-03 {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    right: 165px;
+    top: 148px;
+    z-index: 400;
+    display: block;
+}
+
+.popup-container-04 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2360px;
+    height: 1640px;
+    background-image: url(../images/modal-02-01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2000;
+}
+
+.btn-open-popup-04 {
+    width: 90px;
+    height: 90px;
+    right: 209px;
+    bottom: 255px;
+}
+
+.btn-close-popup-04 {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    right: 216px;
+    top: 160px;
+    z-index: 400;
+    display: block;
+}
+
+.popup-container-05 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2360px;
+    height: 1640px;
+    background-image: url(../images/modal-04.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2000;
+}
+
+.btn-open-popup-05 {
+    width: 348px;
+    height: 90px;
+    right: 328px;
+    bottom: 255px;
+}
+
+.btn-close-popup-05 {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    right: 166px;
+    top: 148px;
+    z-index: 400;
+    display: block;
+}
+
+.btn-close-popup-05-02 {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    right: 284px;
+    top: 302px;
+    z-index: 400;
+    display: block;
+}
+
+.btn-close-popup-05-03 {
+    position: absolute;
+    width: 295px;
+    height: 90px;
+    right: 198px;
+    bottom: 284px;
+    z-index: 400;
+    display: block;
+}
+
+.popup-container-06 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2360px;
+    height: 1640px;
+    background-image: url(../images/modal-05.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2000;
+}
+
+.btn-open-popup-06 {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    right: 160px;
+    top: 302px;
+}
+
+.btn-close-popup-06 {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    right: 166px;
+    top: 148px;
+    z-index: 400;
+    display: block;
+}
+
+.btn-close-popup-06-02 {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    right: 162px;
+    top: 302px;
+    z-index: 400;
+    display: block;
+}
+
+.popup-container-07 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2360px;
+    height: 1640px;
+    background-image: url(../images/modal-06.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2000;
+}
+
+.btn-open-popup-07 {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    right: 198px;
+    bottom: 289px;
+}
+
+.btn-close-popup-07 {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    right: 166px;
+    top: 148px;
+    z-index: 400;
+    display: block;
+}
+
+.popup-container-08 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2360px;
+    height: 1640px;
+    background-image: url(../images/modal-07.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2000;
+}
+
+.btn-open-popup-08 {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    right: 160px;
+    top: 302px;
+}
+
+.btn-close-popup-08 {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    right: 166px;
+    top: 148px;
+    z-index: 400;
+    display: block;
+}
+
+.btn-close-popup-08-02 {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    right: 281px;
+    top: 302px;
+    z-index: 400;
+    display: block;
+}
+
+.popup-container-09 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2360px;
+    height: 1640px;
+    background-image: url(../images/modal-08.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2000;
+}
+
+.btn-open-popup-09 {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    right: 160px;
+    top: 302px;
+}
+
+.btn-close-popup-09 {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    right: 166px;
+    top: 148px;
+    z-index: 400;
+    display: block;
+}
+
+.btn-close-popup-09-02 {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    right: 162px;
+    top: 302px;
+    z-index: 400;
+    display: block;
+}

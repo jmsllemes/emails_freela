@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, user-scalable=yes" />
+	<link href="../shared/shared.css" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+		if (window.navigator.userAgent.includes('iPad')) {
+			document.write('<script src="veeva-library-4.1.js"><\/script>');
+		}
+	</script>
+	<script src="../shared/shared.js"></script>
+	<title>CLM RINVOQ 2026 Público SEGURANÇA</title>
+</head>
+
+
+<body>
+	<div class="main" id="content">
+		<section id="screen">
+			<a href="javascript:void(0)" data-slide="next" class="btn btn-next"></a>
+			<a href="javascript:void(0)" data-slide="prev" class="btn btn-prev"></a>
+			<a href="javascript:void(0)" data-slide="02" class="btn-bula btn"></a>
+
+			<!-- Adicionado: btn-open e data-open -->
+			<a href="javascript:void(0)" class="btn-open-popup-ref btn btn-open" data-open="popup1"></a>
+			<a href="javascript:void(0)" class="btn-open-popup-01 btn btn-open" data-open="popup2"></a>
+			<a href="javascript:void(0)" class="btn-open-popup-03 btn btn-open" data-open="popup3"></a>
+
+
+
+		</section>
+
+		<div id="popup1" class="popup-container-ref popup-container">
+			<a href="javascript:void(0)" class="btn-close-popup-ref btn-close"></a>
+		</div>
+
+		<div id="popup2" class="popup-container-01 popup-container">
+			<a href="javascript:void(0)" class="btn-close-popup-01 btn-close"></a>
+
+			<a href="javascript:void(0)" class="btn-open-popup-04 btn btn-open" data-open="popup4"></a>
+
+			<a href="javascript:void(0)" class="btn-open-popup-05 btn btn-open" data-open="popup5"></a>
+		</div>
+
+		<div id="popup3" class="popup-container-03 popup-container">
+			<a href="javascript:void(0)" class="btn-close-popup-03 btn-close"></a>
+
+			<a href="javascript:void(0)" class="btn-open-popup-07 btn btn-open" data-open="popup7"></a>
+
+		</div>
+
+		<div id="popup4" class="popup-container-04 popup-container">
+			<a href="javascript:void(0)" class="btn-close-popup-04 btn-close"></a>
+		</div>
+
+		<div id="popup5" class="popup-container-05 popup-container">
+			<a href="javascript:void(0)" class="btn-close-popup-05 btn-close"></a>
+			<a href="javascript:void(0)" class="btn-close-popup-05-02 btn-close"></a>
+			<a href="javascript:void(0)" class="btn-close-popup-05-03 btn-close"></a>
+
+			<a href="javascript:void(0)" class="btn-open-popup-06 btn btn-open" data-open="popup6"></a>
+		</div>
+
+		<div id="popup6" class="popup-container-06 popup-container">
+			<a href="javascript:void(0)" class="btn-close-popup-06 btn-close" data-close="#popup6, #popup5"></a>></a>
+			<a href="javascript:void(0)" class="btn-close-popup-06-02 btn-close"></a>
+		</div>
+
+		<div id="popup7" class="popup-container-07 popup-container">
+			<a href="javascript:void(0)" class="btn-close-popup-07 btn-close"></a>
+
+			<a href="javascript:void(0)" class="btn-open-popup-08 btn btn-open" data-open="popup8"></a>
+		</div>
+
+		<div id="popup8" class="popup-container-08 popup-container">
+			<!-- Aqui dizemos para fechar o 8 e o 7 ao mesmo tempo -->
+			<a href="javascript:void(0)" class="btn-close-popup-08 btn-close" </a>
+				<a href="javascript:void(0)" class="btn-close-popup-08-02 btn-close"></a>
+				<a href="javascript:void(0)" class="btn-open-popup-09 btn btn-open" data-open="popup9"></a>
+		</div>
+
+		<div id="popup9" class="popup-container-09 popup-container">
+			<a href="javascript:void(0)" class="btn-close-popup-09 btn-close"
+				data-close="#popup9, #popup8, #popup7"></a>
+
+			<a href="javascript:void(0)" class="btn-close-popup-09-02 btn-close"></a>
+
+		</div>
+
+	</div>
+
+	<script>
+		$(document).ready(function () {
+
+			// FUNÇÃO UNIVERSAL PARA ABRIR (Mantém igual)
+			$(".btn-open").on("click", function (e) {
+				e.preventDefault();
+				var targetPopup = "#" + $(this).attr("data-open");
+				$(targetPopup).stop(true, true).fadeIn(400);
+			});
+
+			// FUNÇÃO UNIVERSAL PARA FECHAR (Melhorada)
+			$(".btn-close").on("click", function (e) {
+				e.preventDefault();
+
+				// Verificamos se o botão tem o atributo data-close
+				var specificTargets = $(this).attr("data-close");
+
+				if (specificTargets) {
+					// Se tiver, fecha os alvos específicos (ex: "#popup8, #popup7")
+					$(specificTargets).stop(true, true).fadeOut(400);
+				} else {
+					// Se não tiver, fecha apenas o popup atual onde o botão está
+					$(this).closest(".popup-container").stop(true, true).fadeOut(400);
+				}
+			});
+
+			// Botão para fechar TUDO e voltar para a screen principal
+			$(".btn-close-all").on("click", function () {
+				$(".popup-container").fadeOut(400);
+			});
+
+		});
+	</script>
+</body>
+
+</html>

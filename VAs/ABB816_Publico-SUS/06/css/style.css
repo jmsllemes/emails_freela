@@ -1,0 +1,270 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 1180px;
+    height: 820px;
+    overflow: hidden;
+}
+
+#geral {
+    margin: 0;
+    padding: 0;
+    width: 1180px;
+    height: 820px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+#tela {
+    background: url("../images/bg.png") no-repeat;
+    width: 1180px;
+    height: 820px;
+    position: absolute;
+    background-size: contain;
+}
+
+#tela-ref {
+    background: url("../images/ref-tela.png") no-repeat;
+    width: 1180px;
+    height: 820px;
+    position: absolute;
+    background-size: contain;
+}
+
+.btn_pop-ref {
+    position: absolute;
+    display: block;
+    bottom: calc(230px / 2);
+    width: calc(70px / 2);
+    height: calc(70px / 2);
+    right: calc(104px /2);
+}
+
+.fechar-ref {
+    position: absolute;
+    display: block;
+    right: calc(140px / 2);
+    top: calc(136px / 2);
+    width: calc(90px / 2);
+    height: calc(90px / 2);
+}
+
+#tela1 {
+    background: url("../images/bg1.png") no-repeat;
+    width: 1180px;
+    height: 820px;
+    position: absolute;
+    background-size: contain;
+}
+
+.btn_pop-up1 {
+    position: absolute;
+    display: block;
+    left: calc(152px / 2);
+    top: calc(1284px / 2);
+    width: calc(400px / 2);
+    height: calc(107px / 2);
+}
+
+.fechar1 {
+    position: absolute;
+    display: block;
+    right: calc(140px / 2);
+    top: calc(136px / 2);
+    width: calc(90px / 2);
+    height: calc(90px / 2);
+}
+
+#tela-ref1 {
+    background: url("../images/ref-bg1.png") no-repeat;
+    width: 1180px;
+    height: 820px;
+    position: absolute;
+    background-size: contain;
+}
+
+.btn_pop-ref1 {
+    position: absolute;
+    display: block;
+    bottom: calc(230px / 2);
+    width: calc(70px / 2);
+    height: calc(70px / 2);
+    right: calc(102px / 2);
+}
+
+.fechar-ref1 {
+    position: absolute;
+    display: block;
+    right: calc(140px / 2);
+    top: calc(136px / 2);
+    width: calc(90px / 2);
+    height: calc(90px / 2);
+}
+
+#tela2 {
+    background: url("../images/bg2.png") no-repeat;
+    width: 1180px;
+    height: 820px;
+    position: absolute;
+    background-size: contain;
+}
+
+.btn_pop-up2 {
+    position: absolute;
+    display: block;
+    left: calc(652px / 2);
+    top: calc(1284px / 2);
+    width: calc(341px / 2);
+    height: calc(107px / 2);
+}
+
+.fechar2 {
+    position: absolute;
+    display: block;
+    right: calc(140px / 2);
+    top: calc(136px / 2);
+    width: calc(90px / 2);
+    height: calc(90px / 2);
+}
+
+#tela-ref2 {
+    background: url("../images/ref-bg2.png") no-repeat;
+    width: 1180px;
+    height: 820px;
+    position: absolute;
+    background-size: contain;
+}
+
+.btn_pop-ref2 {
+    position: absolute;
+    display: block;
+    bottom: calc(230px / 2);
+    width: calc(70px / 2);
+    height: calc(70px / 2);
+    right: calc(102px / 2);
+}
+
+.fechar-ref2 {
+    position: absolute;
+    display: block;
+    right: calc(140px / 2);
+    top: calc(136px / 2);
+    width: calc(90px / 2);
+    height: calc(90px / 2);
+}
+
+#tela3 {
+    background: url("../images/bg3.png") no-repeat;
+    width: 1180px;
+    height: 820px;
+    position: absolute;
+    background-size: contain;
+}
+
+.btn_pop-up3 {
+    position: absolute;
+    display: block;
+    left: calc(1052px / 2);
+    top: calc(1284px / 2);
+    width: calc(300px / 2);
+    height: calc(107px / 2);
+}
+
+.fechar3 {
+    position: absolute;
+    display: block;
+    right: calc(140px / 2);
+    top: calc(136px / 2);
+    width: calc(90px / 2);
+    height: calc(90px / 2);
+}
+
+#tela-ref3 {
+    background: url("../images/ref-bg3.png") no-repeat;
+    width: 1180px;
+    height: 820px;
+    position: absolute;
+    background-size: contain;
+}
+
+.btn_pop-ref3 {
+    position: absolute;
+    display: block;
+    bottom: calc(230px / 2);
+    width: calc(70px / 2);
+    height: calc(70px / 2);
+    right: calc(102px / 2);
+}
+
+.fechar-ref3 {
+    position: absolute;
+    display: block;
+    right: calc(140px / 2);
+    top: calc(136px / 2);
+    width: calc(90px / 2);
+    height: calc(90px / 2);
+}
+
+.btn_menu {
+    position: absolute;
+    display: block;
+    bottom: calc(24px / 2);
+    width: calc(231px / 2);
+    height: calc(94px / 2);
+}
+
+.btn_menu_1 {
+    left: calc(152px /2);
+}
+
+.btn_menu_2 {
+    left: calc(558px /2);
+}
+
+.btn_menu_3 {
+    left: calc(947px /2);
+}
+
+.btn_menu_4 {
+    left: calc(1276px /2);
+}
+
+.btn_menu_5 {
+    left: calc(1574px /2);
+}
+
+.btn_bula {
+    position: absolute;
+    display: block;
+    bottom: calc(43px / 2);
+    width: calc(70px / 2);
+    height: calc(70px / 2);
+    right: calc(237px /2);
+}
+
+
+.next {
+    position: absolute;
+    height: 564px;
+    width: 62px;
+    top: 92px;
+    right: 0;
+    z-index: 100;
+}
+
+.prev {
+    position: absolute;
+    height: 564px;
+    width: 62px;
+    top: 92px;
+    left: 0;
+    z-index: 100;
+}

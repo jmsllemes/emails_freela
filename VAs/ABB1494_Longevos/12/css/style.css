@@ -1,0 +1,186 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 1180px;
+    height: 820px;
+    overflow: hidden;
+}
+
+#geral {
+    margin: 0;
+    padding: 0;
+    width: 1180px;
+    height: 820px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+/* =========================================
+   FUNDOS DAS TELAS (IDs corrigidos)
+   ========================================= */
+
+/* Tela Principal */
+#tela {
+    background: url("../images/bg.png") no-repeat;
+    width: 1180px;
+    height: 820px;
+    position: absolute;
+    background-size: contain;
+}
+
+/* Referência da Tela Principal */
+#tela-ref {
+    background: url("../images/ref-tela.png") no-repeat;
+    width: 1180px;
+    height: 820px;
+    position: absolute;
+    background-size: contain;
+    z-index: 20; /* Garante que fique acima */
+}
+
+/* Tela 2 (Antiga #tela1) */
+#tela2 {
+    background: url("../images/bg1.png") no-repeat;
+    width: 1180px;
+    height: 820px;
+    position: absolute;
+    background-size: contain;
+    z-index: 10;
+}
+
+/* Referência da Tela 2 (Antiga #tela-ref2) */
+#ref-bg1 {
+    background: url("../images/ref-bg1.png") no-repeat;
+    width: 1180px;
+    height: 820px;
+    position: absolute;
+    background-size: contain;
+    z-index: 30;
+}
+
+/* =========================================
+   BOTÕES DA TELA PRINCIPAL (#tela)
+   ========================================= */
+
+/* Botão que abre a REF Principal */
+.btn_pop-ref {
+    position: absolute;
+    display: block;
+    bottom: calc(211px / 2);
+    width: calc(70px / 2);
+    height: calc(70px / 2);
+    right: calc(104px / 2);
+    /* background: rgba(255,0,0,0.5);  Descomente para ver onde o botão está */
+}
+
+/* Botão que abre a TELA 2 */
+.btn_pop-ref2 {
+    position: absolute;
+    display: block;
+    bottom: calc(343px / 2);
+    width: calc(70px / 2);
+    height: calc(70px / 2);
+    right: calc(214px / 2);
+}
+
+/* =========================================
+   BOTÕES DA TELA 2 (#tela2)
+   ========================================= */
+
+/* Botão dentro da Tela 2 que abre a REF-BG1 */
+/* (Usei a mesma posição do btn_pop-ref, ajuste se necessário) */
+.btn_open-ref-bg1 {
+    position: absolute;
+    display: block;
+    bottom: calc(211px / 2); 
+    width: calc(70px / 2);
+    height: calc(70px / 2);
+    right: calc(104px / 2);
+}
+
+/* =========================================
+   BOTÕES DE FECHAR
+   ========================================= */
+
+/* Padrão para todos os botões de fechar (ajuste o topo/dir se mudar o design) */
+.fechar, .fechar-ref, .fechar-tela2, .fechar-ref-bg1 {
+    position: absolute;
+    display: block;
+    right: calc(140px / 2);
+    top: calc(136px / 2);
+    width: calc(90px / 2);
+    height: calc(90px / 2);
+    cursor: pointer;
+    /* background: rgba(0,0,255,0.5); Descomente para testar o clique */
+}
+
+/* =========================================
+   MENUS E NAVEGAÇÃO
+   ========================================= */
+
+.btn_guid-1 {
+    position: absolute;
+    display: block;
+    left: calc(232px / 2);
+    top: calc(529px / 2);
+    width: calc(431px / 2);
+    height: calc(92px / 2);
+}
+
+.btn_guid-2 {
+    position: absolute;
+    display: block;
+    left: calc(663px / 2);
+    top: calc(529px / 2);
+    width: calc(431px / 2);
+    height: calc(92px / 2);
+}
+
+.btn_menu {
+    position: absolute;
+    display: block;
+    bottom: calc(24px / 2);
+    width: calc(231px / 2);
+    height: calc(94px / 2);
+}
+
+.btn_menu_1 { left: calc(251px / 2); }
+.btn_menu_2 { left: calc(548px / 2); }
+.btn_menu_3 { left: calc(913px / 2); }
+.btn_menu_4 { left: calc(1324px / 2); }
+.btn_menu_5 { left: calc(1734px / 2); }
+
+.btn_bula {
+    position: absolute;
+    display: block;
+    bottom: calc(43px / 2);
+    width: calc(70px / 2);
+    height: calc(70px / 2);
+    right: calc(219px / 2);
+}
+
+.next {
+    position: absolute;
+    height: 564px;
+    width: 62px;
+    top: 92px;
+    right: 0;
+    z-index: 100;
+}
+
+.prev {
+    position: absolute;
+    height: 564px;
+    width: 62px;
+    top: 92px;
+    left: 0;
+    z-index: 100;
+}

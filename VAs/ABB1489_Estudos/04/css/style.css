@@ -1,0 +1,197 @@
+/* ========================================== */
+/* 1. RESET E ESTRUTURA BASE                  */
+/* ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 1180px;
+    height: 820px;
+    overflow: hidden;
+    background-color: #000;
+}
+
+#geral {
+    width: 1180px;
+    height: 820px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Camadas de telas e pop-ups */
+.layer-screen {
+    width: 1180px;
+    height: 820px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: none;
+    /* Controlado pelo JS */
+    z-index: 10;
+}
+
+/* ========================================== */
+/* 2. COMPONENTES GERAIS (BOTÕES)             */
+/* ========================================== */
+
+/* Botão Fechar padrão (Topo Direito) */
+.fechar {
+    position: absolute;
+    top: 61px;
+    right: 50px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+/* Botão de Referências padrão (Base Direita) */
+.btn_pop-ref {
+    position: absolute;
+    bottom: 108px;
+    right: 52px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+/* Navegação Lateral Veeva (Invisível/Área de toque) */
+.next,
+.prev {
+    position: absolute;
+    z-index: 100;
+    width: 62px;
+    cursor: pointer;
+}
+
+.next {
+    height: 564px;
+    top: 92px;
+    right: 0;
+}
+
+.prev {
+    height: 564px;
+    top: 92px;
+    left: 0;
+}
+
+/* ========================================== */
+/* 3. MENU INFERIOR                           */
+/* ========================================== */
+.menu-fixo {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 150;
+}
+
+.btn_menu {
+    position: absolute;
+    bottom: 12px;
+    height: 47px;
+    width: 115px;
+    cursor: pointer;
+}
+
+.btn_menu_1 {
+    left: 59px;
+}
+
+.btn_menu_2 {
+    left: 317px;
+}
+
+.btn_menu_3 {
+    left: 515px;
+}
+
+.btn_menu_4 {
+    left: 729px;
+}
+
+.btn_bula {
+    position: absolute;
+    bottom: 21px;
+    right: 108px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+/* ========================================== */
+/* 4. POSIÇÕES ESPECÍFICAS (BOTÕES DE FLUXO)  */
+/* ========================================== */
+
+/* Tela Principal -> Abre Pop-up A (bg1) */
+.btn_pop-up1 {
+    position: absolute;
+    top: 299px;
+    left: 51px;
+    width: 412px;
+    height: 68px;
+    z-index: 20;
+    cursor: pointer;
+}
+
+/* Dentro do Pop-up A -> Abre Pop-up B (bg2) */
+.btn_pop-up4 {
+    position: absolute;
+    bottom: 377px;
+    right: 51px;
+    width: 50px;
+    height: 65px;
+    z-index: 20;
+    cursor: pointer;
+}
+
+/* Tela Principal -> Abre Pop-up C (bg3) */
+.btn_abre_c {
+    position: absolute;
+    top: 474px;
+    left: 51px;
+    width: 412px;
+    height: 68px;
+    z-index: 20;
+    cursor: pointer;
+}
+
+/* Tela Principal -> Abre Pop-up D (bg4) */
+.btn_abre_d {
+    position: absolute;
+    top: 560px;
+    left: 51px;
+    width: 408px;
+    height: 68px;
+    z-index: 20;
+    cursor: pointer;
+}
+
+/* Tela Principal -> Vai para outro ZIP (Veeva) */
+.btn_vai_externo {
+    position: absolute;
+    top: 386px;
+    left: 51px;
+    width: 412px;
+    height: 68px;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.fechar-tela2 {
+    position: absolute;
+    bottom: 377px;
+    left: 51px;
+    width: 50px;
+    height: 65px;
+    z-index: 20;
+    cursor: pointer;
+}
