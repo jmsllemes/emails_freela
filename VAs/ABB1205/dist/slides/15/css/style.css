@@ -1,0 +1,255 @@
+/* Container principal (Veeva padrão) */
+.main {
+    width: 2360px;
+    height: 1640px;
+    position: relative;
+    overflow: hidden;
+}
+
+#screen {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg.png);
+    background-size: contain;
+}
+
+
+.popup-container-ref {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2360px;
+    height: 1640px;
+    background-image: url(../images/modal-01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2000;
+}
+
+.btn-open-popup-ref {
+    width: 83px;
+    height: 120px;
+    right: 172px;
+    top: 0;
+}
+
+.btn-close-popup-ref {
+    position: absolute;
+    width: 106px;
+    height: 106px;
+    right: 1340px;
+    top: 558px;
+    z-index: 400;
+    display: block;
+}
+
+.popup-container-2 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2360px;
+    height: 1640px;
+    background-image: url(../images/modal-02.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2000;
+}
+
+.btn-open-popup-2 {
+    width: 90px;
+    height: 90px;
+    left: 668px;
+    top: 470px;
+}
+
+.btn-close-popup-2 {
+    position: absolute;
+    width: 106px;
+    height: 106px;
+    right: 1340px;
+    top: 558px;
+    z-index: 400;
+    display: block;
+}
+
+.popup-container-3 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2360px;
+    height: 1640px;
+    background-image: url(../images/modal-03.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2000;
+}
+
+.btn-open-popup-3 {
+    width: 90px;
+    height: 90px;
+    left: 595px;
+    top: 667px;
+}
+
+.btn-close-popup-3 {
+    position: absolute;
+    width: 106px;
+    height: 106px;
+    right: 1340px;
+    top: 558px;
+    z-index: 400;
+    display: block;
+}
+
+.popup-container-4 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2360px;
+    height: 1640px;
+    background-image: url(../images/modal-04.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2000;
+}
+
+.btn-open-popup-4 {
+    width: 90px;
+    height: 90px;
+    left: 643px;
+    top: 912px;
+}
+
+.btn-close-popup-4 {
+    position: absolute;
+    width: 106px;
+    height: 106px;
+    right: 1340px;
+    top: 558px;
+    z-index: 400;
+    display: block;
+}
+
+.popup-container-5 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2360px;
+    height: 1640px;
+    background-image: url(../images/modal-05.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2000;
+}
+
+.btn-open-popup-5 {
+    width: 90px;
+    height: 90px;
+    left: 590px;
+    top: 1172px;
+}
+
+.btn-close-popup-5 {
+    position: absolute;
+    width: 106px;
+    height: 106px;
+    right: 1340px;
+    top: 558px;
+    z-index: 400;
+    display: block;
+}
+
+.popup-container-6 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2360px;
+    height: 1640px;
+    background-image: url(../images/modal-06.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2000;
+}
+
+.btn-open-popup-6 {
+    width: 90px;
+    height: 90px;
+    left: 1505px;
+    top: 466px;
+}
+
+.btn-close-popup-6 {
+    position: absolute;
+    width: 106px;
+    height: 106px;
+    right: 1340px;
+    top: 558px;
+    z-index: 400;
+    display: block;
+}
+
+.popup-container-7 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2360px;
+    height: 1640px;
+    background-image: url(../images/modal-07.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2000;
+}
+
+.btn-open-popup-7 {
+    width: 90px;
+    height: 90px;
+    left: 1525px;
+    top: 680px;
+}
+
+.btn-close-popup-7 {
+    position: absolute;
+    width: 106px;
+    height: 106px;
+    right: 1340px;
+    top: 558px;
+    z-index: 400;
+    display: block;
+}
+
+.popup-container-8 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2360px;
+    height: 1640px;
+    background-image: url(../images/modal-08.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2000;
+}
+
+.btn-open-popup-8 {
+    width: 90px;
+    height: 90px;
+    left: 1485px;
+    top: 871px;
+}
+
+.btn-close-popup-8 {
+    position: absolute;
+    width: 106px;
+    height: 106px;
+    right: 1340px;
+    top: 558px;
+    z-index: 400;
+    display: block;
+}

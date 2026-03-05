@@ -1,0 +1,126 @@
+/* Container principal (Veeva padrão) */
+.main {
+    width: 2360px;
+    height: 1640px;
+    position: relative;
+    overflow: hidden;
+}
+
+#screen {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg.png);
+    background-size: contain;
+}
+
+/* Container genérico para todos os popups */
+.popup-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2360px;
+    height: 1640px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2000;
+}
+
+#popup1 {
+    background-image: url(../images/modal-01.png);
+}
+
+.popup-container-2 {
+    background-image: url(../images/modal-02.png);
+}
+
+/* Botões da Tela Principal */
+.btn-open-popup-ref {
+    width: 83px;
+    height: 120px;
+    right: 172px;
+    top: 0;
+    position: absolute;
+}
+
+.btn-open-popup-2 {
+    width: 503px;
+    height: 263px;
+    left: 156px;
+    bottom: 854px;
+    position: absolute;
+}
+
+.btn-open-popup-3 {
+    width: 882px;
+    height: 274px;
+    left: 156px;
+    bottom: 284px;
+    position: absolute;
+}
+
+/* Imagens dos Popups */
+.flow-02a {
+    background-image: url(../images/modal-02a.png);
+}
+
+.flow-02b {
+    background-image: url(../images/modal-02b.png);
+}
+
+.flow-02c {
+    background-image: url(../images/modal-02c.png);
+}
+
+.flow-03 {
+    background-image: url(../images/modal-03.png);
+}
+
+/* Botão Fechar Padrão (X) */
+.btn-close-standard {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    right: 165px;
+    top: 148px;
+    z-index: 2100;
+}
+
+.btn-close-standard-1 {
+   position: absolute;
+    width: 96px;
+    height: 90px;
+    right: 282px;
+    top: 295px;
+}
+
+/* Setas de Próximo e Voltar (Ajuste conforme seu layout) */
+.btn-next {
+    position: absolute;
+    width: 96px;
+    height: 90px;
+    right: 164px;
+    top: 295px;
+}
+
+.btn-back {
+    position: absolute;
+    width: 96px;
+    height: 90px;
+    right: 282px;
+    top: 295px;
+}
+
+.btn-back-1 {
+    position: absolute;
+    width: 96px;
+    height: 90px;
+    right: 164px;
+    top: 295px;
+}
+
+/* Performance e Correção de Flicker */
+.popup-container {
+    will-change: opacity, transform;
+    -webkit-backface-visibility: hidden;
+}
