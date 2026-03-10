@@ -36,10 +36,10 @@
 
 .btn-close-popup-ref {
     position: absolute;
-    width: 106px;
-    height: 106px;
-    right: 1340px;
-    top: 558px;
+    width: 105px;
+    height: 105px;
+    right: 165px;
+    top: 148px;
     z-index: 400;
     display: block;
 }
