@@ -87,3 +87,182 @@ section {
     width: 235px;
     left: 1766px;
 }
+
+/* Dropdown 1 */
+
+.dropdown-1.active {
+	background-image: url(../images/dropdown-1.png);
+	position: absolute;
+	width: 400px;
+	left: 276px;
+	height: 432px;
+	bottom: 188px;
+	background-size: cover;
+	display: block;
+}
+
+.dropdown-1 .btn-01 {
+	bottom: 66px;
+	left: 20px;
+	width: 359px;
+	height: 100px;
+}
+
+.dropdown-1 .btn-02 {
+	bottom: 172px;
+	left: 20px;
+	width: 359px;
+	height: 100px;
+}
+
+.dropdown-1 .btn-03 {
+	bottom: 282px;
+	left: 20px;
+	width: 359px;
+	height: 140px;
+}
+
+/* Dropdown 2 */
+
+.dropdown-2.active {
+	background-image: url(../images/dropdown-2.png);
+	position: absolute;
+	width: 493px;
+	left: 506px;
+	height: 742px;
+	bottom: 188px;
+	background-size: cover;
+	display: block;
+}
+
+.dropdown-2 .btn-01 {
+	bottom: 91px;
+	left: 20px;
+	width: 449px;
+	height: 100px;
+}
+
+.dropdown-2 .btn-02 {
+	bottom: 220px;
+	left: 20px;
+	width: 449px;
+	height: 100px;
+}
+
+.dropdown-2 .btn-03 {
+	bottom: 325px;
+	left: 20px;
+	width: 449px;
+	height: 100px;
+}
+
+.dropdown-2 .btn-04 {
+	bottom: 429px;
+	left: 20px;
+	width: 449px;
+	height: 100px;
+}
+
+.dropdown-2 .btn-05 {
+	bottom: 533px;
+	left: 20px;
+	width: 449px;
+	height: 100px;
+}
+
+.dropdown-2 .btn-06 {
+	bottom: 640px;
+	left: 20px;
+	width: 449px;
+	height: 100px;
+}
+
+/* Dropdown 3 */
+
+.dropdown-3.active {
+	background-image: url(../images/dropdown-3.png);
+	position: absolute;
+	width: 450px;
+	left: 1381px;
+	height: 541px;
+	bottom: 195px;
+	background-size: cover;
+	display: block;
+}
+
+.dropdown-3 .btn-01 {
+	bottom: 66px;
+	left: 20px;
+	width: 409px;
+	height: 100px;
+}
+
+.dropdown-3 .btn-02 {
+	bottom: 172px;
+	left: 20px;
+	width: 409px;
+	height: 100px;
+}
+
+.dropdown-3 .btn-03 {
+	bottom: 282px;
+	left: 20px;
+	width: 409px;
+	height: 140px;
+}
+
+.dropdown-3 .btn-04{
+    bottom: 432px;
+    left: 20px;
+    width: 409px;
+    height: 100px;
+}
+
+/* Dropdown 4 */
+
+.dropdown-4.active {
+    background-image: url(../images/dropdown-4.png);
+    position: absolute;
+    width: 400px;
+    left: 1671px;
+    height: 484px;
+    bottom: 195px;
+    background-size: cover;
+    display: block;
+}
+
+.dropdown-4 .btn-01 {
+	bottom: 66px;
+	left: 20px;
+	width: 357px;
+	height: 100px;
+}
+
+.dropdown-4 .btn-02 {
+	bottom: 172px;
+	left: 20px;
+	width: 357px;
+	height: 100px;
+}
+
+.dropdown-4 .btn-03 {
+	bottom: 282px;
+	left: 20px;
+    width: 357px;
+    height: 90px;
+}
+
+.dropdown-4 .btn-04{
+    bottom: 382px;
+    left: 20px;
+    width: 357px;
+    height: 100px;
+}
+
+
+.dropdown-1,
+.dropdown-2,
+.dropdown-3,
+.dropdown-4 {
+	display: none;
+}

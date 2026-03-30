@@ -65,3 +65,133 @@
     right: 71px;
     top: 168px;
 }
+
+/* Botões dentro de Popup 4 para os fluxos */
+.btn-sub-flow-1 {
+	position: absolute;
+	width: 430px;
+	height: 116px;
+	left: 820px;
+	bottom: 247px;
+}
+
+.btn-sub-flow-2 {
+	position: absolute;
+	width: 473px;
+	height: 116px;
+	left: 1311px;
+	bottom: 247px;
+}
+
+/* Botão Fechar que volta para o Popup 4 */
+.btn-close-to-p4 {
+	position: absolute;
+	width: 105px;
+	height: 105px;
+	right: 165px;
+	top: 148px;
+	z-index: 2100;
+}
+
+/* Setas de Próximo e Anterior genéricas para os fluxos */
+.btn-next {
+	position: absolute;
+	width: 96px;
+	height: 90px;
+	right: 164px;
+	top: 295px;
+}
+
+.btn-back {
+	position: absolute;
+	width: 96px;
+	height: 90px;
+	right: 282px;
+	top: 295px;
+}
+
+.btn-back-1 {
+	position: absolute;
+	width: 96px;
+	height: 90px;
+	right: 164px;
+	top: 295px;
+}
+
+/* Botão da Tela Principal para o Fluxo 04 */
+.btn-open-popup-4-main {
+	position: absolute;
+	width: 126px;
+	height: 126px;
+    left: 1319px;
+    top: 415px;
+	z-index: 100;
+}
+
+.btn-open-popup-5 {
+	position: absolute;
+	width: 189px;
+	height: 192px;
+	left: 2109px;
+	top: 190px;
+	z-index: 100;
+}
+
+/* Imagens do Fluxo 04 */
+.flow-04a {
+	background-image: url(../images/modal-04-a.png);
+}
+
+.flow-04b {
+	background-image: url(../images/modal-04-b.png);
+}
+
+.flow-04c {
+	background-image: url(../images/modal-04-c.png);
+}
+
+.flow-04d {
+	background-image: url(../images/modal-04-d.png);
+}
+
+.flow-04e {
+	background-image: url(../images/modal-04-e.png);
+}
+
+/* Classe padrão para o botão fechar (X) no canto superior direito */
+.btn-close-standard {
+	position: absolute;
+	width: 105px;
+	height: 105px;
+	right: 165px;
+	top: 148px;
+	z-index: 2100;
+}
+
+.popup-container-4 {
+	background-image: url(../images/modal-03.png);
+}
+
+#popup5{
+	background-image: url(../images/modal-05.png);
+}
+
+/* Botão de Fechar Geral (Home) */
+.btn-close-all {
+	position: absolute;
+	width: 105px;
+	height: 105px;
+	right: 165px;
+	top: 148px;
+	z-index: 2100;
+}
+
+/* Botão "Próximo" dentro do Popup 2 */
+.btn-open-next {
+	position: absolute;
+	width: 96px;
+	height: 90px;
+	right: 164px;
+	top: 295px;
+	z-index: 2100;
+}

@@ -30,19 +30,100 @@
 			<!-- Botões Menus e Bula -->
 			<a href="javascript:void(0)" data-slide="22" class="btn-bula btn"></a>
 			<a href="javascript:void(0)" data-slide="01" class="btn-home btn btn-menu"></a>
-			<a href="javascript:void(0)" data-slide="02" class="btn-01 btn btn-menu"></a>
-			<a href="javascript:void(0)" data-slide="05" class="btn-02 btn btn-menu"></a>
+			<a class="dropdown-btn-01 btn-01 btn btn-menu"></a>
+			<a class="dropdown-btn-02 btn-02 btn btn-menu"></a>
 			<a href="javascript:void(0)" data-slide="11" class="btn-03 btn btn-menu"></a>
 			<a href="javascript:void(0)" data-slide="12" class="btn-04 btn btn-menu"></a>
-			<a href="javascript:void(0)" data-slide="13" class="btn-05 btn btn-menu"></a>
-			<a href="javascript:void(0)" data-slide="18" class="btn-06 btn btn-menu"></a>
+			<a class="dropdown-btn-03 btn-05 btn btn-menu"></a>
+			<a class="dropdown-btn-04 btn-06 btn btn-menu"></a>
 
+			<div class="dropdown-1">
+				<a href="javascript:void(0)" data-slide="04" class="btn-01 btn btn-menu"></a>
+				<a href="javascript:void(0)" data-slide="03" class="btn-02 btn btn-menu"></a>
+				<a href="javascript:void(0)" data-slide="02" class="btn-03 btn btn-menu"></a>
+			</div>
+
+			<div class="dropdown-2">
+				<a href="javascript:void(0)" data-slide="10" class="btn-01 btn btn-menu"></a>
+				<a href="javascript:void(0)" data-slide="09" class="btn-02 btn btn-menu"></a>
+				<a href="javascript:void(0)" data-slide="08" class="btn-03 btn btn-menu"></a>
+				<a href="javascript:void(0)" data-slide="06" class="btn-04 btn btn-menu"></a>
+				<a href="javascript:void(0)" data-slide="07" class="btn-05 btn btn-menu"></a>
+				<a href="javascript:void(0)" data-slide="05" class="btn-06 btn btn-menu"></a>
+			</div>
+
+			<div class="dropdown-3">
+				<a href="javascript:void(0)" data-slide="17" class="btn-01 btn btn-menu"></a>
+				<a href="javascript:void(0)" data-slide="16" class="btn-02 btn btn-menu"></a>
+				<a href="javascript:void(0)" data-slide="15" class="btn-03 btn btn-menu"></a>
+				<a href="javascript:void(0)" data-slide="13" class="btn-04 btn btn-menu"></a>
+			</div>
+
+			<div class="dropdown-4">
+				<a href="javascript:void(0)" data-slide="21" class="btn-01 btn btn-menu"></a>
+				<a href="javascript:void(0)" data-slide="20" class="btn-02 btn btn-menu"></a>
+				<a href="javascript:void(0)" data-slide="19" class="btn-03 btn btn-menu"></a>
+				<a href="javascript:void(0)" data-slide="18" class="btn-04 btn btn-menu"></a>
+			</div>
 			<!-- Botões Popups e Ref na tela principal -->
 			<a href="javascript:void(0)" class="btn-open-popup-ref btn btn-open" data-open="popup1"></a>
+			<a href="javascript:void(0)" class="btn-open-popup-4-main btn btn-open" data-open="p4-a"></a>
 
 			<!-- POPUP 1 (Referências) -->
 			<div id="popup1" class="popup-container">
 				<a href="javascript:void(0)" class="btn-close-all btn-close"></a>
+			</div>
+
+			<!-- POPUP 4 (O "Menu" dos dois sub-fluxos) -->
+			<div id="popup4" class="popup-container popup-container-4">
+				<!-- Botão Fechar (Volta para a Home) -->
+				<a href="javascript:void(0)" class="btn-close-all btn-close-popup-4"></a>
+
+				<!-- Botão para Fluxo 01 (Abre a tela 01a) -->
+				<a href="javascript:void(0)" class="btn-sub-flow-1 btn-open" data-open="p3-01a" data-hide="popup4"></a>
+
+				<!-- Botão para Fluxo 02 (Abre a tela 02a) -->
+				<a href="javascript:void(0)" class="btn-sub-flow-2 btn-open" data-open="p3-02a" data-hide="popup4"></a>
+
+				<!-- Botão Voltar (Volta para o Popup 2) -->
+				<a href="javascript:void(0)" class="btn-back-1 btn-open" data-open="popup2" data-hide="popup4"></a>
+			</div>
+
+			<!-- ==========================================
+     		FLUXO 04 (04a, 04b, 04c, 04d, 04e)
+     		========================================== -->
+
+			<!-- Tela 04a -->
+			<div id="p4-a" class="popup-container flow-04a">
+				<a href="javascript:void(0)" class="btn-close-all btn-close-standard"></a> <!-- Volta para Home -->
+				<a href="javascript:void(0)" class="btn-next btn-open" data-open="p4-b" data-hide="p4-a"></a>
+			</div>
+
+			<!-- Tela 04b -->
+			<div id="p4-b" class="popup-container flow-04b">
+				<a href="javascript:void(0)" class="btn-close-all btn-close-standard"></a> <!-- Volta para Home -->
+				<a href="javascript:void(0)" class="btn-back btn-open" data-open="p4-a" data-hide="p4-b"></a>
+				<a href="javascript:void(0)" class="btn-next btn-open" data-open="p4-c" data-hide="p4-b"></a>
+			</div>
+
+			<!-- Tela 04c -->
+			<div id="p4-c" class="popup-container flow-04c">
+				<a href="javascript:void(0)" class="btn-close-all btn-close-standard"></a> <!-- Volta para Home -->
+				<a href="javascript:void(0)" class="btn-back btn-open" data-open="p4-b" data-hide="p4-c"></a>
+				<a href="javascript:void(0)" class="btn-next btn-open" data-open="p4-d" data-hide="p4-c"></a>
+			</div>
+
+			<!-- Tela 04d -->
+			<div id="p4-d" class="popup-container flow-04d">
+				<a href="javascript:void(0)" class="btn-close-all btn-close-standard"></a> <!-- Volta para Home -->
+				<a href="javascript:void(0)" class="btn-back btn-open" data-open="p4-c" data-hide="p4-d"></a>
+				<a href="javascript:void(0)" class="btn-next btn-open" data-open="p4-e" data-hide="p4-d"></a>
+			</div>
+
+			<!-- Tela 04e -->
+			<div id="p4-e" class="popup-container flow-04e">
+				<a href="javascript:void(0)" class="btn-close-all btn-close-standard"></a> <!-- Volta para Home -->
+				<a href="javascript:void(0)" class="btn-back-1 btn-open" data-open="p4-d" data-hide="p4-e"></a>
 			</div>
 		</section>
 	</div>
@@ -74,6 +155,7 @@
 
 		});
 	</script>
+	<script src="../shared/shared.js"></script>
 </body>
 
 </html>

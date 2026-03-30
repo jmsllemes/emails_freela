@@ -207,3 +207,12 @@
     top: 148px;
     z-index: 2100;
 }
+
+.criterios-inclusao{
+    position: absolute;
+    width: 645px;
+    height: 145px;
+    right: 165px;
+    top: 1468px;
+    z-index: 2100;
+}
